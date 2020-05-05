@@ -179,6 +179,20 @@ class FloorInBuilding(models.Model):
         ordering = ['num_floor']
 
 
+class RelativeLocation(models.Model):
+    """Модель Относительное расположение"""
+    name = models.CharField(max_length=150, unique=True, verbose_name='Название')
+    description = models.TextField(verbose_name='Описание')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Относительное расположение'
+        verbose_name_plural = 'Относительные расположения'
+        ordering = ['name']
+
+
 class ResidentialComplex(models.Model):
     """Модель Жилого Комплекса"""
     is_active = models.BooleanField(default=True, verbose_name='Отображать, Да/Нет')
@@ -230,6 +244,8 @@ class ResidentialComplex(models.Model):
     latitude = models.FloatField(null=True, blank=True, verbose_name='Широта')
     description = models.TextField(verbose_name='Описание')
 
+    distance_to_metro = models.IntegerField(db_index=True, verbose_name='Растояние до метро, м')
+
     site_developer = models.URLField(max_length=300,
                                      verbose_name='Сайт застройщика/Новостройки',
                                      default=None,
@@ -261,6 +277,13 @@ class CommercialPremises(models.Model):
                                  default=None,
                                  null=True,
                                  blank=True)
+    relative_location = models.ForeignKey(RelativeLocation,
+                                          on_delete=models.SET_NULL,
+                                          verbose_name='Относительное расположение',
+                                          related_name='relativelocation',
+                                          default=None,
+                                          null=True,
+                                          blank=True)
 
     residential_complex = models.ForeignKey(ResidentialComplex,
                                             on_delete=models.SET_NULL,
