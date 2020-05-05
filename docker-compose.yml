@@ -1,0 +1,38 @@
+version: '3.7'
+
+services:
+  db_brokernsk:
+    container_name: db_brokernsk
+    image: postgres:12.2-alpine
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+    # networks:
+    #   - backend_network
+
+  backend_brokernsk:
+    build: ./backend
+    container_name: backend_brokernsk
+#    command: python manage.py runserver 0.0.0.0:8000
+#    command: gunicorn -c gunicorn.py project.wsgi
+    command: gunicorn project.wsgi:application -w 4 --bind 0.0.0.0:80
+    volumes:
+      - ./backend/:/usr/src/app/
+      - ./backend/static/:/usr/src/app/static/
+      - ./backend/media/:/usr/src/app/media/
+    ports:
+      - 5000:80
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db_brokernsk
+    # networks:
+    #   - backend_network
+    #   - nginx_network
+
+
