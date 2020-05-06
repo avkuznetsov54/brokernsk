@@ -1,11 +1,12 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from .models import (District, DeadlineNewBuilding, Developer, ClassNewBuilding,
+from .models import (District, Deadline, Developer, ClassOfHousing,
                      BusinessCategory, PurposeOfCommercialPremise, CookerHood, TypeEntranceToCommercialPremises,
                      CommunicationSystems, FloorInBuilding, RelativeLocation, ResidentialComplex, CommercialPremises,
                      ImagesResidentialComplex, ImagesCommercialPremises, FloorPlansCommercialPremises,
-                     NameOfNearestMetro)
+                     NamesOfMetroStations, MaterialWallsOfHouse, City, Region, ApartmentDecoration, Infrastructure,
+                     NumberOfRooms, ResidentialPremise, FloorPlansResidentialPremise)
 
 
 class ImagesResidentialComplexInline(admin.TabularInline):
@@ -41,14 +42,20 @@ class FloorPlansCommercialPremisesInline(admin.TabularInline):
     get_image.short_description = "Изображение"
 
 
+@admin.register(NumberOfRooms)
+class NumberOfRoomsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description')
+    list_display_links = ('name',)
+
+
 @admin.register(District)
 class DistrictAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'subname')
     list_display_links = ('name',)
 
 
-@admin.register(DeadlineNewBuilding)
-class DeadlineNewBuildingAdmin(admin.ModelAdmin):
+@admin.register(Deadline)
+class DeadlineAdmin(admin.ModelAdmin):
     list_display = ('id', 'full_date', 'only_year', 'only_quarter')
     list_display_links = ('full_date',)
 
@@ -59,7 +66,7 @@ class DeveloperAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
-@admin.register(ClassNewBuilding)
+@admin.register(ClassOfHousing)
 class ClassNewBuildingAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'description')
     list_display_links = ('name',)
@@ -79,6 +86,12 @@ class ImagesCommercialPremisesAdmin(admin.ModelAdmin):
 
 @admin.register(FloorPlansCommercialPremises)
 class FloorPlansCommercialPremisesAdmin(admin.ModelAdmin):
+    list_display = ('id', 'alt_attr')
+    list_display_links = ('id',)
+
+
+@admin.register(FloorPlansResidentialPremise)
+class FloorPlansResidentialPremiseAdmin(admin.ModelAdmin):
     list_display = ('id', 'alt_attr')
     list_display_links = ('id',)
 
@@ -125,8 +138,38 @@ class RelativeLocationAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
 
-@admin.register(NameOfNearestMetro)
-class NameOfNearestMetroAdmin(admin.ModelAdmin):
+@admin.register(NamesOfMetroStations)
+class NamesOfMetroStationsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'distance_to_center')
+    list_display_links = ('name',)
+
+
+@admin.register(MaterialWallsOfHouse)
+class MaterialWallsOfHouseAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description')
+    list_display_links = ('name',)
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description')
+    list_display_links = ('name',)
+
+
+@admin.register(Region)
+class RegionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description')
+    list_display_links = ('name',)
+
+
+@admin.register(ApartmentDecoration)
+class ApartmentDecorationAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'description')
+    list_display_links = ('name',)
+
+
+@admin.register(Infrastructure)
+class InfrastructureAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'description')
     list_display_links = ('name',)
 
@@ -211,6 +254,12 @@ class CommercialPremisesAdmin(admin.ModelAdmin):
         return mark_safe(f'<img src={obj.main_image.url} height="70"')
 
     get_image.short_description = ''
+
+
+@admin.register(ResidentialPremise)
+class ResidentialPremiseAdmin(admin.ModelAdmin):
+    list_display = ('id', 'number_rooms', 'area', 'price', 'res_complex', 'is_active')
+    list_display_links = ('id',)
 
 
 admin.site.site_title = "BROKERNSK.PRO"
