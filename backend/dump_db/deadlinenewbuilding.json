@@ -1,0 +1,182 @@
+[
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 1,
+    "fields": {
+        "full_date": "I 2020",
+        "only_year": 2020,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 2,
+    "fields": {
+        "full_date": "II 2020",
+        "only_year": 2020,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 3,
+    "fields": {
+        "full_date": "III 2020",
+        "only_year": 2020,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 4,
+    "fields": {
+        "full_date": "IV 2020",
+        "only_year": 2020,
+        "only_quarter": 4
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 5,
+    "fields": {
+        "full_date": "I 2021",
+        "only_year": 2021,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 6,
+    "fields": {
+        "full_date": "II 2021",
+        "only_year": 2021,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 7,
+    "fields": {
+        "full_date": "III 2021",
+        "only_year": 2021,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 8,
+    "fields": {
+        "full_date": "IV 2021",
+        "only_year": 2021,
+        "only_quarter": 4
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 9,
+    "fields": {
+        "full_date": "I 2022",
+        "only_year": 2022,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 10,
+    "fields": {
+        "full_date": "II 2022",
+        "only_year": 2022,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 11,
+    "fields": {
+        "full_date": "III 2022",
+        "only_year": 2022,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 12,
+    "fields": {
+        "full_date": "IV 2022",
+        "only_year": 2022,
+        "only_quarter": 4
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 13,
+    "fields": {
+        "full_date": "I 2023",
+        "only_year": 2023,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 14,
+    "fields": {
+        "full_date": "II 2023",
+        "only_year": 2023,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 15,
+    "fields": {
+        "full_date": "III 2023",
+        "only_year": 2023,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 16,
+    "fields": {
+        "full_date": "IV 2023",
+        "only_year": 2023,
+        "only_quarter": 4
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 17,
+    "fields": {
+        "full_date": "I 2024",
+        "only_year": 2024,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 18,
+    "fields": {
+        "full_date": "II 2024",
+        "only_year": 2024,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 19,
+    "fields": {
+        "full_date": "III 2024",
+        "only_year": 2024,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 20,
+    "fields": {
+        "full_date": "IV 2024",
+        "only_year": 2024,
+        "only_quarter": 4
+    }
+}
+]

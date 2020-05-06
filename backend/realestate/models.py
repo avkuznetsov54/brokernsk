@@ -2,10 +2,19 @@ from django.db import models
 import datetime
 
 
-# ф-ция генерит путь для загружаемого файла
+# ф-ция генерит путь для загружаемого изображения и планировок
 def generate_url_for_image(self, filename):
     now = datetime.datetime.now()
-    url = 'images/realestate/%s/%s/%s/%s' % (now.year, now.month, now.day, filename)
+    url = 'images/realestate/%s/%s/%s/%s%s%s-%s-%s' % (now.year, now.month, now.day,
+                                                       now.hour, now.minute, now.second, now.microsecond, filename)
+    return url
+
+
+# ф-ция генерит путь для загружаемого логотипа застройщика
+def generate_url_for_logo_image(self, filename):
+    now = datetime.datetime.now()
+    url = 'images/logo_image/%s%s%s-%s%s%s-%s-%s' % (now.year, now.month, now.day,
+                                                     now.hour, now.minute, now.second, now.microsecond, filename)
     return url
 
 
@@ -42,6 +51,10 @@ class Developer(models.Model):
     """Модель Застройщик"""
     name = models.CharField(max_length=150, unique=True, verbose_name='Застройщик')
     description = models.TextField(null=True, blank=True, verbose_name='Описание')
+    logo_image = models.FileField(upload_to=generate_url_for_logo_image,
+                                  null=True,
+                                  blank=True,
+                                  verbose_name="Логотип застройщика")
 
     def __str__(self):
         return self.name
@@ -163,8 +176,8 @@ class RelativeLocation(models.Model):
         ordering = ['name']
 
 
-class NameOfNearestMetro(models.Model):
-    """Модель Название ближайщего метро"""
+class NamesOfMetroStations(models.Model):
+    """Модель Метро"""
     name = models.CharField(max_length=150, unique=True, verbose_name='Название')
     description = models.TextField(null=True, blank=True, verbose_name='Описание')
 
@@ -172,8 +185,8 @@ class NameOfNearestMetro(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Название ближайщего метро'
-        verbose_name_plural = 'Названии ближайщего метро'
+        verbose_name = 'Станция метро'
+        verbose_name_plural = 'Станции метро'
         ordering = ['name']
 
 
@@ -181,6 +194,12 @@ class ResidentialComplex(models.Model):
     """Модель Жилого Комплекса"""
     is_active = models.BooleanField(default=True, verbose_name='Отображать, Да/Нет')
     name = models.CharField(max_length=150, db_index=True, unique=True, verbose_name='Название ЖК')
+
+    logo_image = models.FileField(upload_to=generate_url_for_logo_image,
+                                  null=True,
+                                  blank=True,
+                                  verbose_name="Логотип ЖК")
+
     developer = models.ForeignKey(Developer,
                                   on_delete=models.SET_NULL,
                                   verbose_name='Застройщик',
@@ -227,14 +246,14 @@ class ResidentialComplex(models.Model):
     description = models.TextField(null=True, blank=True, verbose_name='Описание')
 
     distance_to_metro = models.IntegerField(db_index=True, null=True, blank=True, verbose_name='Растояние до метро, м')
-    name_of_nearest_metro = models.ManyToManyField(NameOfNearestMetro,
+    metro_stations = models.ManyToManyField(NamesOfMetroStations,
                                                    verbose_name='Название ближайщего метро',
-                                                   related_name='nameofnearestmetro',
+                                                   related_name='metrostations',
                                                    default=None,
                                                    blank=True)
 
     site_developer = models.URLField(max_length=300,
-                                     verbose_name='Сайт застройщика/Новостройки',
+                                     verbose_name='Сайт застройщика/Жилого комплекса',
                                      default=None,
                                      null=True,
                                      blank=True)
@@ -258,7 +277,12 @@ class CommercialPremises(models.Model):
     min_area = models.FloatField(db_index=True, null=True, blank=True, verbose_name='Площадь от, м')
     max_area = models.FloatField(db_index=True, null=True, blank=True, verbose_name='Площадь до, м')
 
-    floor = models.IntegerField(db_index=True, null=True, blank=True, verbose_name='Этаж')
+    floor = models.ManyToManyField(FloorInBuilding,
+                                   verbose_name='Этаж',
+                                   related_name='floorcommercialpremises',
+                                   default=None,
+                                   blank=True)
+
     several_floors = models.BooleanField(default=False, verbose_name='Помещение с несколькими этажами')
 
     address = models.CharField(max_length=150, db_index=True, default=None, verbose_name='Адрес')

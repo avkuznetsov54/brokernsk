@@ -1,0 +1,233 @@
+[
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 2,
+    "fields": {
+        "num_floor": 1
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 3,
+    "fields": {
+        "num_floor": 2
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 4,
+    "fields": {
+        "num_floor": 3
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 5,
+    "fields": {
+        "num_floor": 4
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 6,
+    "fields": {
+        "num_floor": 5
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 7,
+    "fields": {
+        "num_floor": 6
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 8,
+    "fields": {
+        "num_floor": 7
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 9,
+    "fields": {
+        "num_floor": 8
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 10,
+    "fields": {
+        "num_floor": 9
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 11,
+    "fields": {
+        "num_floor": 10
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 12,
+    "fields": {
+        "num_floor": 11
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 13,
+    "fields": {
+        "num_floor": 12
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 14,
+    "fields": {
+        "num_floor": 13
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 15,
+    "fields": {
+        "num_floor": 14
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 16,
+    "fields": {
+        "num_floor": 15
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 17,
+    "fields": {
+        "num_floor": 16
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 18,
+    "fields": {
+        "num_floor": 17
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 19,
+    "fields": {
+        "num_floor": 18
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 20,
+    "fields": {
+        "num_floor": 19
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 21,
+    "fields": {
+        "num_floor": 20
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 22,
+    "fields": {
+        "num_floor": 21
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 23,
+    "fields": {
+        "num_floor": 22
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 24,
+    "fields": {
+        "num_floor": 23
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 25,
+    "fields": {
+        "num_floor": 24
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 26,
+    "fields": {
+        "num_floor": 25
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 27,
+    "fields": {
+        "num_floor": 26
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 28,
+    "fields": {
+        "num_floor": 27
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 29,
+    "fields": {
+        "num_floor": 28
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 30,
+    "fields": {
+        "num_floor": 29
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 31,
+    "fields": {
+        "num_floor": 30
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 32,
+    "fields": {
+        "num_floor": -1
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 33,
+    "fields": {
+        "num_floor": -2
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 34,
+    "fields": {
+        "num_floor": -3
+    }
+}
+]

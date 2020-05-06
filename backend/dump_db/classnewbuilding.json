@@ -1,0 +1,42 @@
+[
+{
+    "model": "realestate.classnewbuilding",
+    "pk": 1,
+    "fields": {
+        "name": "\u0411\u0438\u0437\u043d\u0435\u0441",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.classnewbuilding",
+    "pk": 2,
+    "fields": {
+        "name": "\u042d\u043a\u043e\u043d\u043e\u043c",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.classnewbuilding",
+    "pk": 3,
+    "fields": {
+        "name": "\u041a\u043e\u043c\u0444\u043e\u0440\u0442",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.classnewbuilding",
+    "pk": 4,
+    "fields": {
+        "name": "\u041a\u043e\u043c\u0444\u043e\u0440\u0442 +",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.classnewbuilding",
+    "pk": 5,
+    "fields": {
+        "name": "\u042d\u043b\u0438\u0442\u043d\u044b\u0439",
+        "description": ""
+    }
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+    "model": "realestate.relativelocation",
+    "pk": 1,
+    "fields": {
+        "name": "\u0412 \u0436\u0438\u043b\u043e\u043c \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441\u0435",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.relativelocation",
+    "pk": 2,
+    "fields": {
+        "name": "\u041e\u0442\u0434\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u043e\u044f\u0449\u0435\u0435 \u0437\u0434\u0430\u043d\u0438\u044f",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.relativelocation",
+    "pk": 3,
+    "fields": {
+        "name": "\u0412 \u0436\u0438\u043b\u043e\u043c \u0434\u043e\u043c\u0435",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.relativelocation",
+    "pk": 4,
+    "fields": {
+        "name": "1-\u044f \u043b\u0438\u043d\u0438\u044f",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.relativelocation",
+    "pk": 5,
+    "fields": {
+        "name": "2-\u044f \u043b\u0438\u043d\u0438\u044f",
+        "description": ""
+    }
+}
+]

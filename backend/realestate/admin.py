@@ -8,6 +8,17 @@ from .models import (District, DeadlineNewBuilding, Developer, ClassNewBuilding,
                      NameOfNearestMetro)
 
 
+class ImagesResidentialComplexInline(admin.TabularInline):
+    model = ImagesResidentialComplex
+    extra = 1
+    readonly_fields = ("get_image",)
+
+    def get_image(self, obj):
+        return mark_safe(f'<img src={obj.image.url} height="70"')
+
+    get_image.short_description = "Изображение"
+
+
 class ImagesCommercialPremisesInline(admin.TabularInline):
     model = ImagesCommercialPremises
     extra = 1
@@ -126,6 +137,7 @@ class ResidentialComplexAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
     list_filter = ('is_active', 'developer',)
     search_fields = ('name', 'address', 'developer',)
+    inlines = [ImagesResidentialComplexInline]
     save_on_top = True
     save_as = True
     list_editable = ("is_active",)
