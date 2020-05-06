@@ -6,7 +6,7 @@ from .models import (District, Deadline, Developer, ClassOfHousing,
                      CommunicationSystems, FloorInBuilding, RelativeLocation, ResidentialComplex, CommercialPremises,
                      ImagesResidentialComplex, ImagesCommercialPremises, FloorPlansCommercialPremises,
                      NamesOfMetroStations, MaterialWallsOfHouse, City, Region, ApartmentDecoration, Infrastructure,
-                     NumberOfRooms, ResidentialPremise, FloorPlansResidentialPremise)
+                     NumberOfRooms, ResidentialPremise, FloorPlansResidentialPremise, VideoResidentialComplex)
 
 
 class ImagesResidentialComplexInline(admin.TabularInline):
@@ -207,6 +207,8 @@ class CommercialPremisesAdmin(admin.ModelAdmin):
                        'min_area',
                        'max_area',
                        ('floor', 'several_floors'),
+                       'region',
+                       'city',
                        'address',
                        'district',
                        'relative_location',
@@ -245,7 +247,8 @@ class CommercialPremisesAdmin(admin.ModelAdmin):
                        ),
         }),
         (None, {
-            'fields': (('main_image', 'get_image'),
+            'fields': ('alt_attr',
+                       ('main_image', 'get_image'),
                        ),
         }),
     )
@@ -259,6 +262,12 @@ class CommercialPremisesAdmin(admin.ModelAdmin):
 @admin.register(ResidentialPremise)
 class ResidentialPremiseAdmin(admin.ModelAdmin):
     list_display = ('id', 'number_rooms', 'area', 'price', 'res_complex', 'is_active')
+    list_display_links = ('id',)
+
+
+@admin.register(VideoResidentialComplex)
+class VideoResidentialComplexAdmin(admin.ModelAdmin):
+    list_display = ('id', 'link_on_video', 'residential_complex')
     list_display_links = ('id',)
 
 

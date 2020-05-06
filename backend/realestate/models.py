@@ -209,11 +209,12 @@ class MaterialWallsOfHouse(models.Model):
 
 class City(models.Model):
     """Модель Город"""
-    name = models.CharField(max_length=150, unique=True, verbose_name='Материал дома')
+    name = models.CharField(max_length=150, unique=True, verbose_name='Название')
     main_image = models.FileField(upload_to=generate_url_for_image,
                                   null=True,
                                   blank=True,
                                   verbose_name="Главное изображение Города")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
     longitude = models.FloatField(null=True, blank=True, verbose_name='Долгота')
     latitude = models.FloatField(null=True, blank=True, verbose_name='Широта')
     description = models.TextField(null=True, blank=True, verbose_name='Описание')
@@ -229,7 +230,7 @@ class City(models.Model):
 
 class Region(models.Model):
     """Модель Область"""
-    name = models.CharField(max_length=150, unique=True, verbose_name='Материал дома')
+    name = models.CharField(max_length=150, unique=True, verbose_name='Название')
     description = models.TextField(null=True, blank=True, verbose_name='Описание')
 
     def __str__(self):
@@ -300,21 +301,35 @@ class ResidentialComplex(models.Model):
     developer = models.ForeignKey(Developer,
                                   on_delete=models.SET_NULL,
                                   verbose_name='Застройщик',
-                                  related_name="developer",
+                                  related_name="rescomplex_developer",
                                   default=None,
                                   null=True,
                                   blank=True)
     class_of_housing = models.ForeignKey(ClassOfHousing,
                                          on_delete=models.SET_NULL,
                                          verbose_name='Класс Новостройки',
-                                         related_name='classofhousing',
+                                         related_name='rescomplex_classofhousing',
                                          default=None,
                                          null=True,
                                          blank=True)
+    region = models.ForeignKey(Region,
+                               on_delete=models.SET_NULL,
+                               verbose_name='Область',
+                               related_name='rescomplex_region',
+                               default=None,
+                               null=True,
+                               blank=True)
+    city = models.ForeignKey(City,
+                             on_delete=models.SET_NULL,
+                             verbose_name='Город',
+                             related_name='rescomplex_city',
+                             default=None,
+                             null=True,
+                             blank=True)
     district = models.ForeignKey(District,
                                  on_delete=models.SET_NULL,
                                  verbose_name='Район',
-                                 related_name='districtresidentialcomplex',
+                                 related_name='rescomplex_district',
                                  default=None,
                                  null=True,
                                  blank=True)
@@ -330,13 +345,14 @@ class ResidentialComplex(models.Model):
     house_completed = models.BooleanField(default=False, verbose_name='Дом сдан, Да/Нет')
     deadline = models.ManyToManyField(Deadline,
                                       verbose_name='Срок сдачи',
-                                      related_name='deadline',
+                                      related_name='rescomplex_deadline',
                                       default=None,
                                       blank=True)
     main_image = models.FileField(upload_to=generate_url_for_image,
                                   null=True,
                                   blank=True,
                                   verbose_name="Главное изображение ЖК")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
 
     longitude = models.FloatField(null=True, blank=True, verbose_name='Долгота')
     latitude = models.FloatField(null=True, blank=True, verbose_name='Широта')
@@ -345,7 +361,7 @@ class ResidentialComplex(models.Model):
     distance_to_metro = models.IntegerField(db_index=True, null=True, blank=True, verbose_name='Растояние до метро, м')
     metro_stations = models.ManyToManyField(NamesOfMetroStations,
                                             verbose_name='Название ближайщего метро',
-                                            related_name='metrostations',
+                                            related_name='rescomplex_metrostations',
                                             default=None,
                                             blank=True)
 
@@ -354,6 +370,23 @@ class ResidentialComplex(models.Model):
                                      default=None,
                                      null=True,
                                      blank=True)
+
+    infrastructure = models.ManyToManyField(Infrastructure,
+                                            verbose_name='Инфраструктура',
+                                            related_name='rescomplex_infrastructure',
+                                            default=None,
+                                            blank=True)
+    material_walls = models.ManyToManyField(MaterialWallsOfHouse,
+                                            verbose_name='Материал стен дома',
+                                            related_name='rescomplex_materialwalls',
+                                            default=None,
+                                            blank=True)
+    apart_decoration = models.ManyToManyField(ApartmentDecoration,
+                                              verbose_name='Отделка',
+                                              related_name='rescomplex_apartdecoration',
+                                              default=None,
+                                              blank=True)
+    is_visible_video = models.BooleanField(default=False, verbose_name='Показывать видео')
 
     def __str__(self):
         return self.name
@@ -376,30 +409,44 @@ class CommercialPremises(models.Model):
 
     floor = models.ManyToManyField(FloorInBuilding,
                                    verbose_name='Этаж',
-                                   related_name='floorcommercialpremises',
+                                   related_name='compremises_floor',
                                    default=None,
                                    blank=True)
 
     several_floors = models.BooleanField(default=False, verbose_name='Помещение с несколькими этажами')
 
+    region = models.ForeignKey(Region,
+                               on_delete=models.SET_NULL,
+                               verbose_name='Область',
+                               related_name='compremises_region',
+                               default=None,
+                               null=True,
+                               blank=True)
+    city = models.ForeignKey(City,
+                             on_delete=models.SET_NULL,
+                             verbose_name='Город',
+                             related_name='compremises_city',
+                             default=None,
+                             null=True,
+                             blank=True)
     address = models.CharField(max_length=150, db_index=True, default=None, verbose_name='Адрес')
     district = models.ForeignKey(District,
                                  on_delete=models.SET_NULL,
                                  verbose_name='Район',
-                                 related_name='districtcommercialpremises',
+                                 related_name='compremises_district',
                                  default=None,
                                  null=True,
                                  blank=True)
     relative_location = models.ManyToManyField(RelativeLocation,
                                                verbose_name='Расположение',
-                                               related_name='relativelocation',
+                                               related_name='compremises_relativelocation',
                                                default=None,
                                                blank=True)
 
     residential_complex = models.ForeignKey(ResidentialComplex,
                                             on_delete=models.SET_NULL,
                                             verbose_name='Жилой комплекс',
-                                            related_name='residentialcomplex',
+                                            related_name='compremises_rescomplex',
                                             default=None,
                                             null=True,
                                             blank=True)
@@ -414,12 +461,12 @@ class CommercialPremises(models.Model):
 
     purpose_commercial_premise = models.ManyToManyField(PurposeOfCommercialPremise,
                                                         verbose_name='Назначение коммерческого помещения',
-                                                        related_name='purposecommercialpremise',
+                                                        related_name='compremises_purpose',
                                                         default=None,
                                                         blank=True)
     business_category = models.ManyToManyField(BusinessCategory,
                                                verbose_name='Категория бизнеса',
-                                               related_name='businesscategory',
+                                               related_name='compremises_businesscategory',
                                                default=None,
                                                blank=True)
     rent_price = models.IntegerField(db_index=True, null=True, blank=True, verbose_name='Стоимость аренды, руб/мес.')
@@ -438,25 +485,26 @@ class CommercialPremises(models.Model):
 
     communication_systems = models.ManyToManyField(CommunicationSystems,
                                                    verbose_name='Системы коммуникаций',
-                                                   related_name='communicationsystems',
+                                                   related_name='compremises_comsystems',
                                                    default=None,
                                                    blank=True)
     cooker_hood = models.ForeignKey(CookerHood,
                                     on_delete=models.SET_NULL,
                                     verbose_name='Вытяжка',
-                                    related_name='cookerhood',
+                                    related_name='compremises_cookerhood',
                                     default=None,
                                     null=True,
                                     blank=True)
     type_entrance = models.ManyToManyField(TypeEntranceToCommercialPremises,
                                            verbose_name='Тип входа',
-                                           related_name='typeentrance',
+                                           related_name='compremises_typeentrance',
                                            default=None,
                                            blank=True)
     main_image = models.FileField(upload_to=generate_url_for_image,
                                   null=True,
                                   blank=True,
                                   verbose_name="Главное изображение помещения")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
 
     longitude = models.FloatField(null=True, blank=True, verbose_name='Долгота')
     latitude = models.FloatField(null=True, blank=True, verbose_name='Широта')
@@ -477,14 +525,14 @@ class ResidentialPremise(models.Model):
     res_complex = models.ForeignKey(ResidentialComplex,
                                     on_delete=models.SET_NULL,
                                     verbose_name='Жилой комплекс',
-                                    related_name='rescomplex',
+                                    related_name='respremises_rescomplex',
                                     default=None,
                                     null=True,
                                     blank=True)
     number_rooms = models.ForeignKey(NumberOfRooms,
                                      on_delete=models.SET_NULL,
                                      verbose_name='Количество комнат',
-                                     related_name='numberrooms',
+                                     related_name='respremises_numberrooms',
                                      default=None,
                                      null=True)
 
@@ -498,7 +546,7 @@ class ResidentialPremise(models.Model):
 
     floor = models.ManyToManyField(FloorInBuilding,
                                    verbose_name='Этаж',
-                                   related_name='floorresidentialpremise',
+                                   related_name='respremises_floor',
                                    default=None,
                                    blank=True)
 
@@ -513,7 +561,7 @@ class ResidentialPremise(models.Model):
 
 class ImagesResidentialComplex(models.Model):
     """Модель Изображение Жилого Комплекса"""
-    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="Описание, alt")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
     image = models.FileField(upload_to=generate_url_for_image,
                              null=True,
                              blank=True,
@@ -530,7 +578,7 @@ class ImagesResidentialComplex(models.Model):
 
 class FloorPlansResidentialPremise(models.Model):
     """Модель Планировка Жилого помещения"""
-    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="Описание, alt")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
     image = models.FileField(upload_to=generate_url_for_image,
                              null=True,
                              blank=True,
@@ -549,7 +597,7 @@ class FloorPlansResidentialPremise(models.Model):
 
 class ImagesCommercialPremises(models.Model):
     """Модель Изображение Коммерческого помещения"""
-    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="Описание, alt")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
     image = models.FileField(upload_to=generate_url_for_image,
                              null=True,
                              blank=True,
@@ -567,7 +615,7 @@ class ImagesCommercialPremises(models.Model):
 
 class FloorPlansCommercialPremises(models.Model):
     """Модель Планировка Коммерческого помещения"""
-    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="Описание, alt")
+    alt_attr = models.CharField(max_length=300, null=True, blank=True, verbose_name="img alt")
     image = models.FileField(upload_to=generate_url_for_image,
                              null=True,
                              blank=True,
@@ -581,3 +629,19 @@ class FloorPlansCommercialPremises(models.Model):
     class Meta:
         verbose_name = "Планировка Коммерческого помещения"
         verbose_name_plural = "Планировки Коммерческого помещения"
+
+
+class VideoResidentialComplex(models.Model):
+    """Модель Видео Жилого Комплекса"""
+    link_on_video = models.URLField(max_length=2000,
+                                    verbose_name='Ссылка на видео',
+                                    default=None,
+                                    null=True,
+                                    blank=True)
+    residential_complex = models.ForeignKey(ResidentialComplex, verbose_name="Жилой Комплекс", on_delete=models.CASCADE)
+    description = models.TextField(null=True, blank=True, verbose_name='Описание')
+
+    class Meta:
+        verbose_name = 'Видео Жилого Комплекса'
+        verbose_name_plural = 'Видео Жилого Комплекса'
+        ordering = ['id']

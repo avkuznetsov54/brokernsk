@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99886eef-806d-4d57-b3cd-f7346efef8a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump_db/district.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump_db/nameofnearestmetro.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/realestate/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/realestate/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realestate/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/realestate/models.py" afterDir="false" />
     </list>
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/realestate/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="424">
+              <caret line="250" column="51" lean-forward="true" selection-start-line="250" selection-start-column="51" selection-end-line="250" selection-end-column="51" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -42,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/realestate/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="278" column="15" selection-start-line="278" selection-start-column="4" selection-end-line="278" selection-end-column="15" />
+            <state relative-caret-position="297">
+              <caret line="125" column="81" lean-forward="true" selection-start-line="125" selection-start-column="81" selection-end-line="125" selection-end-column="81" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -78,6 +75,11 @@
       <find>метро</find>
       <find>NamesOfMetroStations</find>
       <find>NumberOfRooms</find>
+      <find>облас</find>
+      <find>Материал дома</find>
+      <find>Отделка</find>
+      <find>filefield</find>
+      <find>type</find>
     </findStrings>
     <replaceStrings>
       <replace>generateUrlForImage</replace>
@@ -96,8 +98,8 @@
         <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/realestate/__init__.py" />
         <option value="$PROJECT_DIR$/realestate/apps.py" />
-        <option value="$PROJECT_DIR$/realestate/models.py" />
         <option value="$PROJECT_DIR$/realestate/admin.py" />
+        <option value="$PROJECT_DIR$/realestate/models.py" />
       </list>
     </option>
   </component>
@@ -229,12 +231,12 @@
       <workItem from="1588666672054" duration="404000" />
       <workItem from="1588667094753" duration="3124000" />
       <workItem from="1588671801709" duration="22814000" />
-      <workItem from="1588706110674" duration="20181000" />
+      <workItem from="1588706110674" duration="24399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46849000" />
+    <option name="totallyTimeSpent" value="51067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,7 +256,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14183673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14183673" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -263,7 +265,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23061225" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23061225" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -387,22 +389,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/realestate/models.py">
+    <entry file="file://$PROJECT_DIR$/realestate/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="278" column="15" selection-start-line="278" selection-start-column="4" selection-end-line="278" selection-end-column="15" />
+        <state relative-caret-position="424">
+          <caret line="250" column="51" lean-forward="true" selection-start-line="250" selection-start-column="51" selection-end-line="250" selection-end-column="51" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/realestate/admin.py">
+    <entry file="file://$PROJECT_DIR$/realestate/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="297">
+          <caret line="125" column="81" lean-forward="true" selection-start-line="125" selection-start-column="81" selection-end-line="125" selection-end-column="81" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
