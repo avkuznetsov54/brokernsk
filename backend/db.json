@@ -1,0 +1,2219 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "realestate",
+        "model": "floorinbuilding"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "realestate",
+        "model": "businesscategory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "realestate",
+        "model": "relativelocation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "realestate",
+        "model": "floorplanscommercialpremises"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "realestate",
+        "model": "commercialpremises"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "realestate",
+        "model": "residentialcomplex"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "realestate",
+        "model": "communicationsystems"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "realestate",
+        "model": "imagescommercialpremises"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "realestate",
+        "model": "purposeofcommercialpremise"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "realestate",
+        "model": "cookerhood"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "realestate",
+        "model": "district"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "realestate",
+        "model": "classnewbuilding"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "realestate",
+        "model": "typeentrancetocommercialpremises"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "realestate",
+        "model": "deadlinenewbuilding"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "realestate",
+        "model": "imagesresidentialcomplex"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+        "app_label": "realestate",
+        "model": "developer"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pjvfgyiuyy0wrzhwugam13okdtz16dvs",
+    "fields": {
+        "session_data": "ZDJmNDU2NGFjOTc4ZGI0OGQyY2RlZmMxYWQxYzk3MmU4NjY4NDk1Yzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjNjcwZWZiMjkyMjU1ZDNlNjI2MTUyNGZkYzhkMjRmYzVmNTc2OWIzIn0=",
+        "expire_date": "2020-05-19T19:17:13.603Z"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 1,
+    "fields": {
+        "name": "\u0417\u0430\u0435\u043b\u044c\u0446\u043e\u0432\u0441\u043a\u0438\u0439",
+        "subname": "\u0417\u041b\u0426"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 2,
+    "fields": {
+        "name": "\u0414\u0437\u0435\u0440\u0436\u0438\u043d\u0441\u043a\u0438\u0439",
+        "subname": "\u0414\u0417\u0416"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 3,
+    "fields": {
+        "name": "\u0416\u0435\u043b\u0435\u0437\u043d\u043e\u0434\u043e\u0440\u043e\u0436\u043d\u044b\u0439",
+        "subname": "\u0416\u0415\u041b"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 4,
+    "fields": {
+        "name": "\u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0441\u043a\u0438\u0439",
+        "subname": "\u041a\u041b\u041d"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 5,
+    "fields": {
+        "name": "\u041a\u0438\u0440\u043e\u0432\u0441\u043a\u0438\u0439",
+        "subname": "\u041a\u0418\u0420"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 6,
+    "fields": {
+        "name": "\u041b\u0435\u043d\u0438\u043d\u0441\u043a\u0438\u0439",
+        "subname": "\u041b\u0415\u041d"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 7,
+    "fields": {
+        "name": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+        "subname": "\u041e\u041a\u0422"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 8,
+    "fields": {
+        "name": "\u041f\u0435\u0440\u0432\u043e\u043c\u0430\u0439\u0441\u043a\u0438\u0439",
+        "subname": "\u041f\u0420\u0412"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 9,
+    "fields": {
+        "name": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439",
+        "subname": "\u0421\u041e\u0412"
+    }
+},
+{
+    "model": "realestate.district",
+    "pk": 10,
+    "fields": {
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439",
+        "subname": "\u0426\u0415\u041d"
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 1,
+    "fields": {
+        "full_date": "I 2020",
+        "only_year": 2020,
+        "only_quarter": 1
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 2,
+    "fields": {
+        "full_date": "II 2020",
+        "only_year": 2020,
+        "only_quarter": 2
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 3,
+    "fields": {
+        "full_date": "III 2020",
+        "only_year": 2020,
+        "only_quarter": 3
+    }
+},
+{
+    "model": "realestate.deadlinenewbuilding",
+    "pk": 4,
+    "fields": {
+        "full_date": "IV 2020",
+        "only_year": 2020,
+        "only_quarter": 4
+    }
+},
+{
+    "model": "realestate.typeentrancetocommercialpremises",
+    "pk": 1,
+    "fields": {
+        "name": "\u041e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0439 \u0432\u0445\u043e\u0434",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.typeentrancetocommercialpremises",
+    "pk": 2,
+    "fields": {
+        "name": "\u041e\u0431\u0449\u0438\u0439 \u0432\u0445\u043e\u0434",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.typeentrancetocommercialpremises",
+    "pk": 3,
+    "fields": {
+        "name": "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u0445\u043e\u0434\u043e\u0432 \u0438 \u0432\u044b\u0445\u043e\u0434\u043e\u0432",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.communicationsystems",
+    "pk": 1,
+    "fields": {
+        "name": "\u0412\u0441\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.communicationsystems",
+    "pk": 2,
+    "fields": {
+        "name": "\u0421\u0432\u0435\u0442",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.communicationsystems",
+    "pk": 3,
+    "fields": {
+        "name": "\u041e\u0442\u043e\u043f\u043b\u0435\u043d\u0438\u0435",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.communicationsystems",
+    "pk": 4,
+    "fields": {
+        "name": "\u0412\u043e\u0434\u0430",
+        "description": ""
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 2,
+    "fields": {
+        "num_floor": 1
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 3,
+    "fields": {
+        "num_floor": 2
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 4,
+    "fields": {
+        "num_floor": 3
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 5,
+    "fields": {
+        "num_floor": 4
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 6,
+    "fields": {
+        "num_floor": 5
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 7,
+    "fields": {
+        "num_floor": 6
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 8,
+    "fields": {
+        "num_floor": 7
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 9,
+    "fields": {
+        "num_floor": 8
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 10,
+    "fields": {
+        "num_floor": 9
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 11,
+    "fields": {
+        "num_floor": 10
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 12,
+    "fields": {
+        "num_floor": 11
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 13,
+    "fields": {
+        "num_floor": 12
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 14,
+    "fields": {
+        "num_floor": 13
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 15,
+    "fields": {
+        "num_floor": 14
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 16,
+    "fields": {
+        "num_floor": 15
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 17,
+    "fields": {
+        "num_floor": 16
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 18,
+    "fields": {
+        "num_floor": 17
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 19,
+    "fields": {
+        "num_floor": 18
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 20,
+    "fields": {
+        "num_floor": 19
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 21,
+    "fields": {
+        "num_floor": 20
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 22,
+    "fields": {
+        "num_floor": 21
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 23,
+    "fields": {
+        "num_floor": 22
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 24,
+    "fields": {
+        "num_floor": 23
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 25,
+    "fields": {
+        "num_floor": 24
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 26,
+    "fields": {
+        "num_floor": 25
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 27,
+    "fields": {
+        "num_floor": 26
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 28,
+    "fields": {
+        "num_floor": 27
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 29,
+    "fields": {
+        "num_floor": 28
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 30,
+    "fields": {
+        "num_floor": 29
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 31,
+    "fields": {
+        "num_floor": 30
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 32,
+    "fields": {
+        "num_floor": -1
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 33,
+    "fields": {
+        "num_floor": -2
+    }
+},
+{
+    "model": "realestate.floorinbuilding",
+    "pk": 34,
+    "fields": {
+        "num_floor": -3
+    }
+},
+{
+    "model": "realestate.commercialpremises",
+    "pk": 1,
+    "fields": {
+        "is_active": true,
+        "is_sale": true,
+        "is_rent": false,
+        "area": null,
+        "floor": null,
+        "address": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "district": 1,
+        "relative_location": null,
+        "residential_complex": null,
+        "building_commercial_premise": false,
+        "finished_commercial_premise": false,
+        "rent_price": null,
+        "cost_of_sale": null,
+        "min_payback": null,
+        "max_payback": null,
+        "min_average_rental_rate": null,
+        "max_average_rental_rate": null,
+        "possible_income": null,
+        "min_kw": null,
+        "max_kw": null,
+        "cooker_hood": null,
+        "main_image": "images/realestate/2020/5/6/\u0410\u0440\u043d\u043e\u043b\u044c\u0434_\u0428\u0432\u0430\u0440\u0446\u043d\u0435\u0433\u0433\u0435\u0440.png",
+        "longitude": null,
+        "latitude": null,
+        "description": "",
+        "purpose_commercial_premise": [],
+        "business_category": [],
+        "communication_systems": [],
+        "type_entrance": []
+    }
+},
+{
+    "model": "realestate.imagescommercialpremises",
+    "pk": 1,
+    "fields": {
+        "alt_attr": null,
+        "image": "images/realestate/2020/5/6/\u0414\u0436\u0435\u043a\u0438_\u0427\u0430\u043d_BiQ4ehA.jpg",
+        "commercial_premises": 1
+    }
+},
+{
+    "model": "realestate.floorplanscommercialpremises",
+    "pk": 1,
+    "fields": {
+        "alt_attr": null,
+        "image": "images/realestate/2020/5/6/\u041a\u0432\u0435\u043d\u0442\u0438\u043d_\u0422\u0430\u0440\u0430\u043d\u0442\u0438\u043d\u043e.jpg",
+        "commercial_premises": 1
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add \u042d\u0442\u0430\u0436 \u0432 \u0437\u0434\u0430\u043d\u0438\u0438",
+        "content_type": 7,
+        "codename": "add_floorinbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change \u042d\u0442\u0430\u0436 \u0432 \u0437\u0434\u0430\u043d\u0438\u0438",
+        "content_type": 7,
+        "codename": "change_floorinbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete \u042d\u0442\u0430\u0436 \u0432 \u0437\u0434\u0430\u043d\u0438\u0438",
+        "content_type": 7,
+        "codename": "delete_floorinbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view \u042d\u0442\u0430\u0436 \u0432 \u0437\u0434\u0430\u043d\u0438\u0438",
+        "content_type": 7,
+        "codename": "view_floorinbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430",
+        "content_type": 8,
+        "codename": "add_businesscategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430",
+        "content_type": 8,
+        "codename": "change_businesscategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430",
+        "content_type": 8,
+        "codename": "delete_businesscategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f \u0431\u0438\u0437\u043d\u0435\u0441\u0430",
+        "content_type": 8,
+        "codename": "view_businesscategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add \u041e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 9,
+        "codename": "add_relativelocation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change \u041e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 9,
+        "codename": "change_relativelocation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete \u041e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 9,
+        "codename": "delete_relativelocation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view \u041e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0440\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 9,
+        "codename": "view_relativelocation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add \u041f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u043a\u0430",
+        "content_type": 10,
+        "codename": "add_floorplanscommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change \u041f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u043a\u0430",
+        "content_type": 10,
+        "codename": "change_floorplanscommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete \u041f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u043a\u0430",
+        "content_type": 10,
+        "codename": "delete_floorplanscommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view \u041f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u043a\u0430",
+        "content_type": 10,
+        "codename": "view_floorplanscommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add \u041a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 11,
+        "codename": "add_commercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change \u041a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 11,
+        "codename": "change_commercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete \u041a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 11,
+        "codename": "delete_commercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view \u041a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 11,
+        "codename": "view_commercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add \u0416\u0438\u043b\u043e\u0439 \u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+        "content_type": 12,
+        "codename": "add_residentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change \u0416\u0438\u043b\u043e\u0439 \u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+        "content_type": 12,
+        "codename": "change_residentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete \u0416\u0438\u043b\u043e\u0439 \u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+        "content_type": 12,
+        "codename": "delete_residentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view \u0416\u0438\u043b\u043e\u0439 \u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0441",
+        "content_type": 12,
+        "codename": "view_residentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add \u0421\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "content_type": 13,
+        "codename": "add_communicationsystems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change \u0421\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "content_type": 13,
+        "codename": "change_communicationsystems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete \u0421\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "content_type": 13,
+        "codename": "delete_communicationsystems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view \u0421\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "content_type": 13,
+        "codename": "view_communicationsystems"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 14,
+        "codename": "add_imagescommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 14,
+        "codename": "change_imagescommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 14,
+        "codename": "delete_imagescommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 14,
+        "codename": "view_imagescommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add \u041d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u044f",
+        "content_type": 15,
+        "codename": "add_purposeofcommercialpremise"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change \u041d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u044f",
+        "content_type": 15,
+        "codename": "change_purposeofcommercialpremise"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete \u041d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u044f",
+        "content_type": 15,
+        "codename": "delete_purposeofcommercialpremise"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view \u041d\u0430\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u044f",
+        "content_type": 15,
+        "codename": "view_purposeofcommercialpremise"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add \u0412\u044b\u0442\u044f\u0436\u043a\u0430",
+        "content_type": 16,
+        "codename": "add_cookerhood"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change \u0412\u044b\u0442\u044f\u0436\u043a\u0430",
+        "content_type": 16,
+        "codename": "change_cookerhood"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete \u0412\u044b\u0442\u044f\u0436\u043a\u0430",
+        "content_type": 16,
+        "codename": "delete_cookerhood"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view \u0412\u044b\u0442\u044f\u0436\u043a\u0430",
+        "content_type": 16,
+        "codename": "view_cookerhood"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add \u0420\u0430\u0439\u043e\u043d",
+        "content_type": 17,
+        "codename": "add_district"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change \u0420\u0430\u0439\u043e\u043d",
+        "content_type": 17,
+        "codename": "change_district"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete \u0420\u0430\u0439\u043e\u043d",
+        "content_type": 17,
+        "codename": "delete_district"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view \u0420\u0430\u0439\u043e\u043d",
+        "content_type": 17,
+        "codename": "view_district"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add \u041a\u043b\u0430\u0441\u0441 \u041d\u043e\u0432\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+        "content_type": 18,
+        "codename": "add_classnewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change \u041a\u043b\u0430\u0441\u0441 \u041d\u043e\u0432\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+        "content_type": 18,
+        "codename": "change_classnewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete \u041a\u043b\u0430\u0441\u0441 \u041d\u043e\u0432\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+        "content_type": 18,
+        "codename": "delete_classnewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view \u041a\u043b\u0430\u0441\u0441 \u041d\u043e\u0432\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+        "content_type": 18,
+        "codename": "view_classnewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add \u0422\u0438\u043f \u0432\u0445\u043e\u0434\u0430 \u0432 \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 19,
+        "codename": "add_typeentrancetocommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change \u0422\u0438\u043f \u0432\u0445\u043e\u0434\u0430 \u0432 \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 19,
+        "codename": "change_typeentrancetocommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete \u0422\u0438\u043f \u0432\u0445\u043e\u0434\u0430 \u0432 \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 19,
+        "codename": "delete_typeentrancetocommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view \u0422\u0438\u043f \u0432\u0445\u043e\u0434\u0430 \u0432 \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u0435",
+        "content_type": 19,
+        "codename": "view_typeentrancetocommercialpremises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add \u0421\u0440\u043e\u043a \u0441\u0434\u0430\u0447\u0438",
+        "content_type": 20,
+        "codename": "add_deadlinenewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change \u0421\u0440\u043e\u043a \u0441\u0434\u0430\u0447\u0438",
+        "content_type": 20,
+        "codename": "change_deadlinenewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete \u0421\u0440\u043e\u043a \u0441\u0434\u0430\u0447\u0438",
+        "content_type": 20,
+        "codename": "delete_deadlinenewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view \u0421\u0440\u043e\u043a \u0441\u0434\u0430\u0447\u0438",
+        "content_type": 20,
+        "codename": "view_deadlinenewbuilding"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 21,
+        "codename": "add_imagesresidentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 21,
+        "codename": "change_imagesresidentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 21,
+        "codename": "delete_imagesresidentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view \u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+        "content_type": 21,
+        "codename": "view_imagesresidentialcomplex"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+        "name": "Can add \u0417\u0430\u0441\u0442\u0440\u043e\u0439\u0449\u0438\u043a",
+        "content_type": 22,
+        "codename": "add_developer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+        "name": "Can change \u0417\u0430\u0441\u0442\u0440\u043e\u0439\u0449\u0438\u043a",
+        "content_type": 22,
+        "codename": "change_developer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+        "name": "Can delete \u0417\u0430\u0441\u0442\u0440\u043e\u0439\u0449\u0438\u043a",
+        "content_type": 22,
+        "codename": "delete_developer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+        "name": "Can view \u0417\u0430\u0441\u0442\u0440\u043e\u0439\u0449\u0438\u043a",
+        "content_type": 22,
+        "codename": "view_developer"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$Nt8QLCZ4N8k8$G10sGeUih/WpwuPIsZnE2q1V7JsCTlWIb9qzBUjBcVo=",
+        "last_login": "2020-05-05T19:17:13.601Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-05-05T19:16:48.321Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-05-05T19:29:27.731Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u041a\\u043e\\u043c\\u043c\\u0435\\u0440\\u0447\\u0435\\u0441\\u043a\\u043e\\u0433\\u043e \\u043f\\u043e\\u043c\\u0435\\u0449\\u0435\\u043d\\u0438\\u044f\", \"object\": \"1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-05-05T19:31:43.388Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u041f\\u043b\\u0430\\u043d\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430 \\u041a\\u043e\\u043c\\u043c\\u0435\\u0440\\u0447\\u0435\\u0441\\u043a\\u043e\\u0433\\u043e \\u043f\\u043e\\u043c\\u0435\\u0449\\u0435\\u043d\\u0438\\u044f\", \"object\": \"1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-05-05T20:12:51.449Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043c\\u0435\\u0449\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-05-05T20:19:50.316Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u043e\\u0434\\u0430\\u0436\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-05-05T20:21:40.711Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "\u0417\u0430\u0435\u043b\u044c\u0446\u043e\u0432\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-05-05T20:21:55.663Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0441\u043a\u0430\u044f 5",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0430\\u0439\\u043e\\u043d\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-05-06T03:20:37.403Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-05-06T03:20:56.453Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-05-06T03:21:00.953Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-05-06T03:21:03.574Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-05-06T03:21:36.023Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-05-06T03:21:38.659Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-05-06T03:21:40.990Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "7",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-05-06T03:21:42.725Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "8",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-05-06T03:21:44.571Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "9",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-05-06T03:21:47.367Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-05-06T03:21:48.919Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "12",
+        "object_repr": "11",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-05-06T03:21:50.995Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "13",
+        "object_repr": "12",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-05-06T03:21:54.521Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "14",
+        "object_repr": "13",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-05-06T03:21:56.840Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "15",
+        "object_repr": "14",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-05-06T03:21:58.826Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "15",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-05-06T03:22:02.756Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "17",
+        "object_repr": "16",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-05-06T03:22:05.479Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "18",
+        "object_repr": "17",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2020-05-06T03:22:08.409Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "18",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2020-05-06T03:22:10.636Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "20",
+        "object_repr": "19",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2020-05-06T03:22:14.145Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "20",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2020-05-06T03:22:15.919Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "21",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2020-05-06T03:22:17.799Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "23",
+        "object_repr": "22",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2020-05-06T03:22:19.957Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "24",
+        "object_repr": "23",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2020-05-06T03:22:22.480Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "25",
+        "object_repr": "24",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2020-05-06T03:22:30.025Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "26",
+        "object_repr": "25",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2020-05-06T03:22:32.390Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "26",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2020-05-06T03:22:34.596Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "28",
+        "object_repr": "27",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2020-05-06T03:22:36.958Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "29",
+        "object_repr": "28",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2020-05-06T03:22:39.854Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "30",
+        "object_repr": "29",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2020-05-06T03:22:42.065Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "30",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2020-05-06T03:22:54.857Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "-1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2020-05-06T03:22:58.201Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "-2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2020-05-06T03:23:09.217Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "-3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2020-05-06T03:26:03.203Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "\u041e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0439 \u0432\u0445\u043e\u0434",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2020-05-06T03:26:10.437Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "\u041e\u0431\u0449\u0438\u0439 \u0432\u0445\u043e\u0434",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2020-05-06T03:26:24.026Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "\u041d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u0445\u043e\u0434\u043e\u0432 \u0438 \u0432\u044b\u0445\u043e\u0434\u043e\u0432",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2020-05-06T03:26:52.790Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "I 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2020-05-06T03:27:03.756Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "II 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2020-05-06T03:27:11.536Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "3",
+        "object_repr": "III 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2020-05-06T03:27:20.219Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "4",
+        "object_repr": "IV 2020",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2020-05-06T03:27:46.937Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "\u0412\u0441\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0446\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2020-05-06T03:27:58.483Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "\u0421\u0432\u0435\u0442",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2020-05-06T03:28:08.212Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "\u041e\u0442\u043e\u043f\u043b\u0435\u043d\u0438\u0435",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2020-05-06T03:28:16.969Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "\u0412\u043e\u0434\u0430",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2020-05-06T03:30:36.349Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "\u0414\u0437\u0435\u0440\u0436\u0438\u043d\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2020-05-06T03:32:04.715Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "\u0416\u0435\u043b\u0435\u0437\u043d\u043e\u0434\u043e\u0440\u043e\u0436\u043d\u044b\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2020-05-06T03:32:19.422Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "\u041a\u0430\u043b\u0438\u043d\u0438\u043d\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2020-05-06T03:32:34.417Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "\u041a\u0438\u0440\u043e\u0432\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2020-05-06T03:32:46.607Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "6",
+        "object_repr": "\u041b\u0435\u043d\u0438\u043d\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2020-05-06T03:33:01.399Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "7",
+        "object_repr": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2020-05-06T03:33:14.033Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "8",
+        "object_repr": "\u041f\u0435\u0440\u0432\u043e\u043c\u0430\u0439\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2020-05-06T03:33:27.789Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "9",
+        "object_repr": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2020-05-06T03:33:42.520Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "10",
+        "object_repr": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
